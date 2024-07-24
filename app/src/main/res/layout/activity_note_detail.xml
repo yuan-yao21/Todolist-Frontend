@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NoteDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_55">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/back" />
+
+        <ImageView
+            android:id="@+id/iv_llm"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/iv_back"
+            android:scaleType="centerInside"
+            android:src="@mipmap/robot" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_llm"
+            android:layout_centerVertical="true"
+            android:text="笔记摘要"
+            android:textSize="14sp"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/iv_takePhoto"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/iv_audio"
+            android:scaleType="centerInside"
+            android:src="@mipmap/camera" />
+
+        <ImageView
+            android:id="@+id/iv_audio"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/iv_delete"
+            android:scaleType="centerInside"
+            android:src="@mipmap/audio_f" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/iv_save"
+            android:scaleType="centerInside"
+            android:src="@mipmap/delete" />
+
+        <ImageView
+            android:id="@+id/iv_save"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_save" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_margin="@dimen/dimen_20"
+        android:background="@null"
+        android:hint="标题"
+        android:singleLine="true"
+        android:textColor="@color/black_text"
+        android:textSize="@dimen/dimen_22"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:background="@null"
+        android:hint="类别"
+        android:singleLine="true"
+        android:textColor="@color/black_text"
+        android:textSize="@dimen/dimen_22"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="6月13号 12:09" />
+
+    <ImageView
+        android:id="@+id/iv_audio_play"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45"
+        android:scaleType="centerInside"
+        android:src="@mipmap/icon_audio_play"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="@dimen/dp_10"
+        android:adjustViewBounds="true"
+        android:maxHeight="@dimen/dp_200"
+        android:scaleType="centerInside"
+        android:src="@mipmap/default_image"
+        android:visibility="gone" />
+
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="@dimen/dimen_20"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="开始书写"
+        android:lineSpacingExtra="@dimen/dimen_3"
+        android:textColor="@color/black_text"
+        android:textSize="@dimen/dimen_16" />
+
+</LinearLayout>

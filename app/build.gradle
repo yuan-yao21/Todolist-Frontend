@@ -1,0 +1,90 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.stu.minote'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.stu.minote"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    viewBinding{
+        enabled true
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('player.jks')
+            storePassword 'player123123'
+            keyAlias 'player'
+            keyPassword 'player123123'
+        }
+        debug {
+            storeFile file('player.jks')
+            storePassword 'player123123'
+            keyAlias 'player'
+            keyPassword 'player123123'
+        }
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.media3:media3-ui:1.3.1'
+    implementation 'androidx.media3:media3-exoplayer:1.3.1'
+    implementation 'androidx.media3:media3-exoplayer-dash:1.3.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.5.0'
+    //RxJava
+    implementation 'io.reactivex:rxjava:1.1.3'
+    //RxAndroid
+    implementation 'io.reactivex:rxandroid:1.1.0'
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    //retrofit依赖Gson
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.0'
+    //OkHttp
+    implementation 'com.squareup.okhttp3:okhttp:3.2.0'
+    //retrofit依赖RxJava
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.0.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+
+    implementation 'com.github.chrisbanes:PhotoView:2.0.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    // 申请权限
+// PictureSelector 基础 (必须)
+    implementation 'io.github.lucksiege:pictureselector:v3.11.2'
+
+    // 图片压缩 (按需引入)
+    implementation 'io.github.lucksiege:compress:v3.11.2'
+
+    // 图片裁剪 (按需引入)
+    implementation 'io.github.lucksiege:ucrop:v3.11.2'
+}

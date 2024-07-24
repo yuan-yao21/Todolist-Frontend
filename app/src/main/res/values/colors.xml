@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FC6701</color>
+    <color name="purple_500">#FC6701</color>
+    <color name="purple_700">#FC6701</color>
+    <color name="teal_200">#FC6701</color>
+    <color name="teal_700">#FC6701</color>
+    <color name="cp_bg">#F0F0F0</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main_text">#3491ff</color>
+    <color name="black_text">#333333</color>
+    <color name="gray_text">#989DA2</color>
+    <color name="title_bg">#412ef4</color>
+    <color name="zi">#7D8AFF</color>
+    <color name="red">#B50031</color>
+    <color name="green">#34C759</color>
+    <color name="blue">#13227a</color>
+    <color name="login_btn_color">#99A9DF</color>
+
+    <color name="heise_40">#66000000</color>
+    <color name="gray_20">#36000000</color>
+    <color name="gray_F2">#F2F2F2</color>
+    <color name="transparent">#11000000</color>
+    <color name="huise_bg">#E7E7E7</color>
+    <color name="blue1">#93D8DD</color>
+    <color name="title_black">#1c2227</color>
+    <color name="bg_color">#f9fbfc</color>
+    <color name="orange">#FC6701</color>
+</resources>
